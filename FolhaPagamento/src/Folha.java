@@ -24,15 +24,19 @@ public class Folha {
 			f3.setEmail("heitor.rosa@rosbank.com.br");
 			f3.setSalario(5000);
 			
-						
-						System.out.println("   Nome           Salário (R$)        Imposto Devido (R$)");
-						System.out.println();
-						System.out.println(f1.getNome() + "        " + f1.getSalario() + "              " + f1.calcularImposto() );
-						System.out.println();  
-						System.out.println(f2.getNome() + "        " + f2.getSalario() + "              " + f2.calcularImposto() );
-						System.out.println();
-						System.out.println(f3.getNome() + "        " + f3.getSalario() + "              " + f3.calcularImposto() );
-						System.out.println();
+			f1.reajustarSalario(5);
+			f2.reajustarSalario(8);
+			f3.reajustarSalario(10);
+			
+			System.out.println();			
+			System.out.println("   Nome           Salário (R$)        Imposto Devido (R$)");
+			System.out.println();
+			System.out.println(f1.getNome() + "        " + f1.getSalario() + "              " + f1.calcularImposto() );
+			System.out.println();  
+			System.out.println(f2.getNome() + "        " + f2.getSalario() + "              " + f2.calcularImposto() );
+			System.out.println();
+			System.out.println(f3.getNome() + "        " + f3.getSalario() + "              " + f3.calcularImposto() );
+			
 						
 					
 			teclado.close();				

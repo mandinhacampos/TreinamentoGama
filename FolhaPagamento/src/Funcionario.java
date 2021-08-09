@@ -10,6 +10,13 @@ public class Funcionario {
 		salario=salario+(salario*valor/100);
 	}
 	
+	public Funcionario(int numeroFuncional,String nome, String email, double salario) {
+		this.numeroFuncional=numeroFuncional;
+		this.nome= nome;
+		this.email = email;
+		this.salario=salario;
+		
+	}
 	public String exibirInfo() {
 		return "Funcionário: "+nome+ (" (Funcional: "+numeroFuncional) + ")\n" + "E-mail: "+email+ 	"\n" + "Salário: R$"+ salario+ "\n" ;
 	}

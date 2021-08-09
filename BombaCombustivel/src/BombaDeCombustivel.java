@@ -9,14 +9,16 @@ public class BombaDeCombustivel {
 		this.precoLitro=precoLitro;
 	}
 	
-	public void abastecerPorValor(double totalPagar){
-		this.totalPagar=totalPagar;
-		this.qtdeLitro=this.totalPagar/this.precoLitro;
+	public double abastecerPorValor(double totalaPagar){
+		totalPagar=totalaPagar;
+		qtdeLitro=totalPagar/precoLitro;
+		return qtdeLitro;
 	}
 	
-	public void abastecerPorLitro(double qtdeLitro){
-		this.qtdeLitro=qtdeLitro;
-		this.totalPagar= this.qtdeLitro*this.precoLitro;
+	public double abastecerPorLitro(double qtedeLitro){
+		qtdeLitro=qtedeLitro;
+		totalPagar= qtdeLitro*precoLitro;
+		return totalPagar;
 	}
 	
 	public String exibirRecibo(){
